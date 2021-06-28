@@ -1,0 +1,275 @@
+9:30 AM - 1:00 PM
+-----------------
+20 MINS - BREAK 
+	11.15 AM IST
+
+SonarQube
+====================
+What is SonarQube?
+
+Why we should learn?
+
+When we should learn?
+
+Who should be learning this?
+
+How can i learn?
+================================
+What is SonarQube?
+-----------------------------'
+	QUALITY mgmt tool
+	QUALITY mgmt tool for Code Quality
+	From SonarSource
+	Written in JAVA
+		- Platform independent
+		- JRE
+	Release 
+		Community 	- FOCUS FOR THE DAY - FREE & Apache License
+		Developer
+		Enterprise
+		Data Center
+
+	What is QUALITY ?
+	- Code Quality		- FOCUS FOR THE DAY
+	- Test Quality
+	
+	Tool
+	- Save time
+		- Reducing a soft release cycle
+	- Save Cost
+		- Avoid technial debt
+	- Improve Quality
+		- of Software
+
+===============================================
+Why we should learn?
+- 70% of the BUGS Found after release in the software 
+			- NOT cos of Bad testing
+			- But coz of BAD CODING.
+===============================================
+Issues# Found during Coding  -----	issues found after release
+--------------------------
+10 RS					80 Rs	
+
+==============================================
+When we should learn?
+	- ARE you doing CODING for the PRODUCT?
+	- Are you doing CODING for TESTING a Product?
+	- Are yoy doing CODING for Infra/Ops?
+
+
+How can i learn?
+======================================
+Step 1 - Get a Code Quality
+		- Peer Code Review?
+		- Static Code Review
+			- CODE would Review CODE
+			- CLASS file would review JAVA file
+			- Rule would review CODE
+			- Rule(S) would review CODE
+			- Tool would review CODE
+			- Static Code Analsyis tool would review code.
+		What are the Static Code Analsyis tool?
+		https://en.wikipedia.org/wiki/List_of_tools_for_static_code_analysis#Java
+	How it works?
+	
+Step 2 - Manage a Code Quality(S)
+-----------------------------------------------------
+How SonarQube Works!?
+
+Sonarqube Server
+--------------------------
+	WEB 
+	
+	RULES
+	DB
+		ANY RDBMS
+
+Dev machine
+--------------------
+Scanner
+
+
+Code
+==============================================================
+
+
+ 462  clear
+  463  ls
+  464  wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-8.9.1.44547.zip
+  465  clear
+  466  ls
+  467  pwd
+  468  unzip sonarqube-8.9.1.44547.zip
+  469  clear
+  470  ls
+  471  cd sonarqube-8.9.1.44547/bin/
+  472  ls
+  473  cd linux-x86-64/
+  474  ls
+  475  ./sonar.sh start
+  476  ./sonar.sh status
+  477  cd ..
+  478  ls
+  479  clear
+  480  ls
+  481  cd ..
+  482  ls
+  483  cd logs
+  484  ls
+  485  more sonar.20210628.log
+  486  clear
+  487  ls
+  488  cd  ..
+  489  ls
+  490  cd ..
+  491  ls
+  492  yum remove java-1.8.0-openjdk-devel
+  493  sudo yum remove java-1.8.0-openjdk-devel
+  494  clear
+  495  java --version
+  496  java
+  497  ckear
+  498  clear
+  499  java --version
+  500  java -version
+  501  sudo yum remove java-1.8.0-openjdk-devel
+  502  clear
+  503  sudo yum remove java-1.8.0-openjdk-devel
+  504  java -version
+  505  which java
+  506  java --version
+  507  java -version
+  508  clear
+  509  yum list installed
+  510  clear
+  511  yum list installed | grep java
+  512  sudo yum remove java-1.8.0-openjdk.x86_64
+  513  clear
+  514  java -version
+  515  yum list installed | grep java
+  516  sudo yum remove java-1.8.0-openjdk-headless.x86_64
+  517  clear
+  518  java -version
+  519  clear
+  520  java -version
+  521  sudo yum install java-1.11.0-openjdk-devel
+  522  sudo yum install java-1.11.0-openjdk
+  523  yum update
+  524  sudo yum update
+  525  clear
+  526  yum install java-11-openjdk
+  527  sudo yum install java-11-openjdk
+  528  cler
+  529  ls
+  530  clear
+  531  java -version
+  532  clear
+  533  ls
+  534  cd  sonarqube-8.9.1.44547/
+  535  ls
+  536  cd bin/
+  537  ls
+  538  cd linux-x86-64/
+  539  clear
+  540  ls
+  541  ./sonar.sh start
+  542  ./sonar.sh status
+  543  cd ..
+  544  ls
+  545  clear
+  546  cd ..
+  547  ls
+  548  cd conf/
+  549  ls
+  550  more sonar.properties
+  551  clear
+  552  ls
+  553  cd ..
+  554  ls
+  555  cd data/
+  556  ls
+  557  cd web/
+  558  ls
+  559  cd deploy/
+  560  ls
+  561  cd ..
+  562  ls
+  563  cd ..
+  564  ls
+  565  clear
+  566  ls
+  567  sudo -s
+  568  cd ..
+  569  ls
+  570  cd bin/
+  571  ls
+  572  cd linux-x86-64/
+  573  clear
+  574  ls
+  575  ./sonar.sh stop
+  576  ./sonar.sh start
+  577  ./sonar.sh status
+
+http://20.81.129.174:9000/
+admin
+password
+
+
+
+How to setup DEV machine?
+---------------------------------
+Step 1 - Download & Install JAVA8/11
+Download from - https://jdk.java.net/java-se-ri/11
+
+Step 2 - Set a JAVA_HOME path
+
+Step 3 - Git clone a Code from - https://github.com/devopsschool-demo-labs-projects/java-sonarqube-helloworld-src
+Under E:\sonarqube\code
+
+Step 4 - Download and Unzip Scanner from - https://docs.sonarqube.org/latest/analysis/scan/sonarscanner/
+Under E:\sonarqube\scanner
+
+
+[IMPORTANT] Step 5 - Modify a "sonar-project.properties" under E:\sonarqube\code
+
+sonar.projectKey=org.sonarqube:devopsschool
+sonar.projectName=devopsschool
+sonar.projectVersion=1.0
+sonar.login=admin
+sonar.password=password
+
+Step 6 - Modify a "sonar-scanner.properties" under E:\sonarqube\scanner\conf
+with
+sonar.host.url=http://20.81.129.174:9000/
+
+Step 7 - RUN a scanner on THE SRC code(Where E:\sonarqube\code)
+
+scanner = E:\sonarqube\scanner\bin\sonar-scanner.bat
+
+Code - E:\sonarqube\code
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
