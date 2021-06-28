@@ -262,6 +262,12 @@ Code - E:\sonarqube\code
 
 Scanner for LINUX - sonar-scanner.sh
 
+==========================================================
+Videos - https://www.youtube.com/channel/UCrXr49kBvXJeQMMl2693c4g
+Slides - https://devopsschool.com/slides/
+Tutorials - https://www.devopsschool.com/blog/
+
+www.RajeshKumar.xyz
 
 
 
