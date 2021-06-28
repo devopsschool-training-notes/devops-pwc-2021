@@ -222,14 +222,25 @@ How to setup DEV machine?
 Step 1 - Download & Install JAVA8/11
 Download from - https://jdk.java.net/java-se-ri/11
 
+LINUX -  sudo yum install java-11-openjdk
+
+
 Step 2 - Set a JAVA_HOME path
 
 Step 3 - Git clone a Code from - https://github.com/devopsschool-demo-labs-projects/java-sonarqube-helloworld-src
 Under E:\sonarqube\code
 
+LINUX - 
+$ sudo yum install git -y
+$ git clone https://github.com/devopsschool-demo-labs-projects/java-sonarqube-helloworld-src
+
 Step 4 - Download and Unzip Scanner from - https://docs.sonarqube.org/latest/analysis/scan/sonarscanner/
 Under E:\sonarqube\scanner
 
+Linux - 
+$ sudo yum install wget unzip 
+$ wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-4.6.2.2472-linux.zip
+$ unzip sonar-scanner-cli-4.6.2.2472-linux.zip
 
 [IMPORTANT] Step 5 - Modify a "sonar-project.properties" under E:\sonarqube\code
 
@@ -248,6 +259,8 @@ Step 7 - RUN a scanner on THE SRC code(Where E:\sonarqube\code)
 scanner = E:\sonarqube\scanner\bin\sonar-scanner.bat
 
 Code - E:\sonarqube\code
+
+Scanner for LINUX - sonar-scanner.sh
 
 
 
