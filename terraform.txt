@@ -103,6 +103,66 @@ AWS using VPC- https://www.devopsschool.com/blog/example-code-of-terrform-aws-vp
 
 Terrform Condition - 
 https://www.devopsschool.com/blog/terraform-conditioning-example-program/
+================================================================================
+
+Provisionar
+===============================
+
+Resource
+	Create
+	Go Inside
+	 	LINUX - SSH
+		WINDOWS - RDP (WINRM)
+			DO SOMTHING INSIDE IT
+=======================================================
+https://www.terraform.io/docs/language/resources/provisioners/syntax.html
+Provisionar
+	file
+		copy a file from HOST machine to a resouces
+	local-exec
+
+	remote-exec
+
+	chef
+	puppet
+	salt
+	
+==================================================
+10 TOOLS in INFRA
+-----------------
+EACH ---- 20 RESOURCES
+		10 VMS - 
+			RUN SOME COMMANDS
+
+	10 PROVIDERS
+		- 20 RESOURCES
+			Provisionar
+
+PROVI
+
+https://www.devopsschool.com/blog/terraform-provisioners-tutorials-and-complete-guide/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
