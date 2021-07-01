@@ -92,12 +92,17 @@ Step 4 - TERRAFORM plan
 Step 5 - TERRAFORM apply 
 
 Step 6 - TERRAFORM destory
+=======================================
+Phase #2 - How to get github token? - https://github.com/settings/tokens
 
 
+Terraform vars
+- https://www.devopsschool.com/blog/terraform-variables-complete-reference-guide/
 
+AWS using VPC- https://www.devopsschool.com/blog/example-code-of-terrform-aws-vpc/
 
-
-
+Terrform Condition - 
+https://www.devopsschool.com/blog/terraform-conditioning-example-program/
 
 
 
