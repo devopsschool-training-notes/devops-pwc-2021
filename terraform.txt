@@ -59,8 +59,22 @@ is 1.0.1. You can update by downloading from https://www.terraform.io/downloads.
 
 
 Step 2 - What Resources you want ON what providers?
+- ec2 where on AWS
+- git repo where on github
 
 Step 3 - Wtite a HSCL code
+		- store .tf
+		- IN ONE dir - One .tf or multiple .tf == Considered ONE .tf
+
+- What providers?? - https://registry.terraform.io/browse/providers
+aws
+github
+- Specify Providers in .tf
+
+- Download providers
+$ terraform init		# ONE TIME
+- Which Resources??
+
 
 Step 4 - TERRAFORM plan
 
