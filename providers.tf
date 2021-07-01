@@ -13,7 +13,9 @@ terraform {
 
 
 provider "aws" {
-  region = "us-west-2"
+  region     = "us-west-2"
+  access_key = "DDD"
+  secret_key = "DDD"
 }
 
 provider "github" {}
