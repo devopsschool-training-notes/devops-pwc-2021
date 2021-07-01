@@ -66,15 +66,26 @@ Step 3 - Wtite a HSCL code
 		- store .tf
 		- IN ONE dir - One .tf or multiple .tf == Considered ONE .tf
 
-- What providers?? - https://registry.terraform.io/browse/providers
+Point  - 1 - What providers?? - https://registry.terraform.io/browse/providers
 aws
 github
-- Specify Providers in .tf
+Point  - 2 - Specify Providers in .tf
 
-- Download providers
+Point  - 3 - Download providers
 $ terraform init		# ONE TIME
-- Which Resources??
 
+Point  - 4- Which Resources??
+- ec2 where on AWS
+- git repo where on github
+
+Resources(Ec2-instance)
+	Parameter1 - REQUIRED	- type
+	Parameter2 - OPTIONAL	- ami	
+
+	Parameter3
+	Parameter4
+
+Point  - 5 - Set AWS creden
 
 Step 4 - TERRAFORM plan
 
