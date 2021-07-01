@@ -14,8 +14,21 @@ terraform {
 
 provider "aws" {
   region     = "us-west-2"
-  access_key = "DDD"
-  secret_key = "DDD"
+  access_key = ""
+  secret_key = ""
 }
 
-provider "github" {}
+provider "github" {
+  token = "dddd"
+  owner = "devopsschool-demo-temporary"
+}
+
+
+
+
+
+
+
+
+
+
