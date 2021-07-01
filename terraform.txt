@@ -1,0 +1,81 @@
+Name - Terraform
+----------------------------
+Code for the Product - Python
+Code for test a product - Selenium with Python
+Code for infra/ops? - Terraform
+----------------------------------------------------
+What is Terraform?
+	- A Tool for coding infra and ops
+	====================================
+	Release
+		terraform		CMD  - FREE - OpenSource
+		terraform cloud		Hosted by Hashicorp  - FREE/PAID 
+		terraform enterprise	Hosted by UR COMP  - FREE/PAID 
+	Written in Golang
+	By Hashicorp	
+		- vagrant - terraform - packer - consul - nomad - vault - 
+
+What is there in infra/ops?
+https://devopsschool.com/path/
+https://www.devopsschool.com/blog/what-should-i-learn-for-devops-vs-devsecops-vs-sre/
+
+AWS 
+github
+=======================================
+
+Why terraform?
+============================
+----------AUTOMATE Everything-----------------
+Code for the Product - Python
+Code for test a product - Selenium with Python
+Code for infra/ops? - Terraform
+
+
+How Terraform works? Terraform Architecture?
+===================================================
+
+
+Human -> HSCL(Code)		-----TERRAFORM				--> Provider(S) ---> API of tool for action to be done.
+		AWS RESOURCE(S)	  		--> PLAN-APPLY-DESTROY
+		AZURE RESOURCE(S) 		-> PLAN-APPLY-DESTROY
+		GC RESOURCE(S)    		-> PLAN-APPLY-DESTROY
+		GITHub RESOURCE(S) 		-> PLAN-APPLY-DESTROY
+	
+
+
+Step 1- Install terraform?
+
+# Download and Extract into - C:\tools\hashicorp\terraform
+- https://www.terraform.io/downloads.html
+
+# ADD "C:\tools\hashicorp\terraform" into PATH
+
+# verify on CMD.
+C:\Users\Rajesh Kumar>terraform -v
+Terraform v0.15.5
+on windows_amd64
+Your version of Terraform is out of date! The latest version
+is 1.0.1. You can update by downloading from https://www.terraform.io/downloads.html
+
+
+Step 2 - What Resources you want ON what providers?
+
+Step 3 - Wtite a HSCL code
+
+Step 4 - TERRAFORM plan
+
+Step 5 - TERRAFORM apply 
+
+Step 6 - TERRAFORM destory
+
+
+
+
+
+
+
+
+
+
+
+
