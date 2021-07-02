@@ -131,9 +131,15 @@ Step 4 - Create a FOLDER
 Step 5 - Move a job to a FOLDER
 
 
+- automated Scheduling
+======================================================================
+https://www.devopsschool.com/blog/how-to-schedule-and-trigger-a-jenkins-job-automatically/
 
 
+curl -X POST --user rajesh:1152f227ae20792ed6ac30120d73f547a3 http://20.81.129.174:8080/job/Rajesh/job/raj-compile/build?delay=0sec
 
+
+token=iFBDOBhNhaxL4T9ass93HRXun2JF161Z
 
 20.81.129.174
 vmuser
