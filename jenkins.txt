@@ -146,6 +146,51 @@ vmuser
 VM$user3456789
 
 
+=======================================================
+=========================================================
+How to integrate ANY  tools?
+===========================================================================
+Step 1 - DO YOU KNOW "ANY" Tool?
+	SonarQube
+	-- Sonarqube Server		DONE
+	-- Scanner
+	-- Code			https://github.com/devopsschool-demo-labs-projects/java-sonarqube-helloworld-src			
+
+Step 2 - Install plugins
+
+Step 3 - Configure plugins
+
+Step 4 - Use plugins
+
+
+http://20.81.129.174:9000/
+admin
+password
+
+https://www.devopsschool.com/blog/how-to-integrate-sonarqube-with-jenkins-as-part-of-ci-cd/
+https://www.devopsschool.com/blog/how-to-configure-junit-reports-at-jenkins/
+https://www.devopsschool.com/blog/how-to-archive-a-package-and-file-with-jenkins/
+
+
+sonar.login=admin
+sonar.password=password
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
