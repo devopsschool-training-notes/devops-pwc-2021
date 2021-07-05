@@ -274,6 +274,62 @@ httpd
 --------------
 rootfs + httpd
 
+ 12  which docker
+   13  which dockerd
+   14  which containerd
+   15  ps -eaf | grep docker
+   16  clear
+   17  ls
+   18  docker info
+   19  clear
+   20  docker -v
+   21  docker version
+   22  clear
+   23  docker images
+   24  docker ps
+   25  docker ps -a
+   26  docker pull httpd
+   27  clear
+   28  docker images
+   29  docker ps -a
+   30  docker create httpd
+   31  docker ps -a
+   32  docker create httpd
+   33  docker ps -a
+   34  docker start 94a76dd5327f
+   35  docker ps -a
+   36  docker start f5ecf459c4f9
+   37  docker ps -a
+   38  docker stop f5ecf459c4f9
+   39  docker ps -a
+   40  docker restart 94a76dd5327f
+   41  docker ps -a
+   42  docker pause 94a76dd5327f
+   43  docker ps -a
+   44  docker unpause 94a76dd5327f
+   45  docker ps -a
+   46  docker kill  94a76dd5327f
+   47  docker ps -a
+   48  docker rm 94a76dd5327f f5ecf459c4f9 d367d045ce2d
+   49  docker ps -a
+   50  history
+   
+   
+   Assignment
+   ------------------------------
+   DIFF Between KILL and STOP
+   diff between Pause and Unpause 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
 
 
 
