@@ -158,14 +158,39 @@ PHYSCIAL 			Virtual 			Container
 Other tools - https://www.devopsschool.com/blog/list-of-top-container-runtime-interface-projects/
 
 
+URL : https://cloud.cdp.rpsconsulting.in/console/#
+
+Passwod  - Password@1
 
 
+Hema Shankar Gaonkar	1 DP-User01
+Anusha Adudodla	2 DP-User02
+ABHINAV KUMAR	3 DP-User03
+Avinash Mallik	4 DP-User04
+Harish C	5 DP-User05
+Abhishek Reddy	6 DP-User06
+Avinash Soni	7 DP-User07
+Anubhab Pahari	8 DP-User08
+Gorla Narasimha Reddy	9 DP-User09
+BHARGAVI KADAKANCHI	10 DP-User10
+GODWIN PK	11 DP-User11
+Arindam Chakraborty	12 DP-User12
+G Jyoshna	13 DP-User13
+JUDITH SOUNDARYA	14 DP-User14
+Akshatha Ashwathnarayan	15 DP-User15
+Ragipindi Anitha	16 DP-User16
+Gorla Narasimha Reddy	17 DP-User17
+manideep	18 DP-User18
 
 
+Windows server password -admin@123
 
-
-
-
+Centos password – rps/rps@123
+ 
+How get IP address from terminal
+$ ifconfig
+Centos - 192.168.220.129
+Root password- root/redhat 
 
 
 
