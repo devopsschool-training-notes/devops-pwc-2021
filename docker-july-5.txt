@@ -195,17 +195,84 @@ Root password- root/redhat
 How to install docker?
 https://devopsschool.com/tutorial/docker/install-config/docker-install-commuityedition-centos-rhel.html
 
+=========================================================================
+
+What is Docker?
+Why Docker?
+What is Container?
+
+Docker Arch?
+===========================================
+Human -> Docker client ---> Docker Deamon -> ContainerD -> KERNEL
+	-------------------------------------
+		Docker Engine
+
+Docker Components
+==================================================
+1. Docker Engine
+
+2. Docker Image
+----------------------
+
+-----------------------------
+ROOT FS + USER FS + APP FS
+-------------------------------------
+/...... + root +   ls
+
+ubuntu = rootfs
+tomcat = rootfs + java + tomcat
+centos = rootfs
+
+FROM 1 Image --- you can create multiple container
+
+
+Vm Images
+-----------------------------
+BOOT FS + ROOT FS + USER FS + APP FS
+-------------------------------------
+KERNEL  + /...... + root +   ls
+
+3. Registry
+		Repository
+			  version of file system
 
 
 
+		hub.docker.com
+		nexus
+		artifactory
+
+4. Container
+
+Human --> Client --> Server
+			IMAGE IN LOCAL REPO
+			- YES --------------------> ContainerD ---> Kernal
+
+			- NO --> Docker Image from HUB to LR ->  ContainerD ---> Kernal
 
 
+			KERNAL Create
+					1 USER
+					1 NET
+					1 PID MAP
+					1 MOUNT from 1 COPY of  Image
 
+					&&& 		
+					ATTACH NET + PID + MNT to USER.== CONTAINER
 
+====================================================================================
+Container Lifecycle
+create --> start -> stop -> start -> restart -> pause -> unpause -> kill -> remove
+====================================================================================
+Vms Lifecycle
+--------------
+create --> start -> stop -> start -> restart -> pause -> unpause -> kill -> remove
 
-
-
-
+DECIDE WHAT IMAGE?
+----------------------------
+httpd
+--------------
+rootfs + httpd
 
 
 
