@@ -1,0 +1,195 @@
+Rajesh Kumar
+=======================
+Demo  - 
+LAB  - '
+============================
+9:30 AM - 5:30 PM - 30 mins. 
+------------------------
+2 BREAK - 
+	20 mins - 11 AM & 3.30 PM
+======================================
+Lunch - 1 Hour - 1 - 2 PM
+--------------------------------------------
+================================================================================
+What is DevOps?
+---------------------------
+	Dev + Ops
+	----------
+	DEVOPS
+==================================================================================================
+		90s 					| 2000				|||| NOW
+==================================================================================================
+Deliver		CDs | Floopy		internet					Internet is using
+--------------------------------------------------------------------------------------------------
+Release 	1 YEAR			2 WEEKS						1 HOUR OR Few Sec
+
+Feature 	SO MANY			1 FEATURE					1 FUNCTION
+
+Platform 	Desktop			BROWSER						Devices
+
+RUNNING		PHSYCIAL		VIRTUAL						Container
+
+Users 		ISOLATED		CONNECTED					VERY MUCH CONNECTED
+---------------------------------------------------------------------------------------------------
+Org wants
+	- Reduce a Software Dev Cost	- Reduce a Software Dev & RUNNING Cost		- Reduce a Software Dev & RUNNING Cost	
+	- Improve Quality		- Improve Quality				- Improve Quality
+					- Reduce a Release Cycle			- Reduce a Release Cycle		
+					
+				
+Architecture 	Monolithic		SOA						Microservices
+
+
+Model		Waterfall		Agile						DEVOPS	
+--------------------------------------------------------------------------------------
+TEAM ST 	Client			Client+Arch+Designer+DEV+QA			Client+Arch+Designer+DEV+QA+Ops+Support
+		Arch					
+		Designer		Ops+Support
+		DEV			
+		QA			
+		Ops
+		Support
+										
+--------------------------------------------------------------
+DEVOPS	
+	Combination of
+	- best practices
+	- best tools
+	- Best & Effective process
+	- Avoid unwated inherted things from past
+	
+	to help Employees & Employer to CHANGE a MINDET and WORKING CULTURE
+
+	for 
+	
+	- Reduce a Software Dev & RUNNING Cost
+	- Improve Quality
+	- Reduce a Release Cycle
+--------------------------------
+	DEVOPS
+		A Person who can CODE for a PRODUCT			JAVA
+		+ A Person who can CODE for a TESTING PRODUCT		SELENIUM
+		+ A Person who can CODE for a Infra & Ops		TERRAFORM
+
+
+
+
+
+DEVOPS -> DevSecOps
+-------------------
+SRE
+========================================================================================================
+
+What is Docker?
+--------------------------
+	Container mgmt tool
+	Written in Golang
+	Release
+		Communuity 
+		Enterprise
+	version - 20.X
+
+	--- Docker Engine
+
+	Tool
+	- Saving cost
+		- Saving App RUNNING COST (CPU + RAM + STO)
+	- Saving time 
+		- 1 DAY to 5 MINs to 1 SEC
+	- Impr Eff* 
+		- APP(DEV) --> APP(QA) --> APP(PROD)
+		----------------------------------------
+				1 SEC
+				CLONE ONE
+
+	What is Container?
+	-------------------------------------------
+	ISOLATE INDEPENDENT APp RUNN TIME ENV
+
+	ONE USER From USER NS
+		ATTACHED TO ONE ROOT from MNT NS
+		ATTACHED TO ONE NET  from NET NS
+		ATTACHED TO ONE PID  from PID NS
+	
+=========================================================================================
+=========================================================================================
+To RUN Any APP - What Resources we need?
+-------------------------------------------------
+HARDWARE
+- CPU
+- RAM
+- STO
+-----------
+	OS
+	- KERNEL			CAN CREATE	OS WOULD CREATE		APP NEED
+		Namespace
+			MNT(RFS)	UNLIMITED	1			1			
+			USER		UNLIMITED	UNLIMITED		1	
+			PID MAP		UNLIMITED	1			1
+			NET		UNLIMITED	1			1
+	
+		ROOT FS
+		USER
+		PID
+		NET
+
+		cgroups 
+
+	
+kernel 
+The kernel is a computer program at the core of a computer's operating system and has complete control over everything in the system.
+
+cgroups 
+cgroups is a Linux kernel feature that limits, accounts for, and isolates the resource usage of a collection of processes. 								----------------------
+									CPU+RAM
+FILESYSTEM
+	- collections of files & dir for SOME PURPOSE.
+	BOOT FILESYSTEM	AKA KERNAL FILESYSTEM		windows & linux
+	ROOT FILESYSTEM	ubuntu - fedroa - centos - rhel - amazon - kali - suse - windows 10
+	USER FILESYSTEM
+	APP FILESYSTEM
+
+
+Evolution of Computing
+================================================================
+PHYSCIAL 			Virtual 			Container
+
+
+Other tools - https://www.devopsschool.com/blog/list-of-top-container-runtime-interface-projects/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
