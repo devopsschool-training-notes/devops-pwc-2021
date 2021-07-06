@@ -576,6 +576,26 @@ https://devopsschool.com/tutorial/docker/commands/index.html
 
 
 
+  1  apt-get install git
+    2  apt-get update
+    3  apt-get install git
+    4  clear
+    5  git
+    6  clear
+    7  java
+    8  apt-get install java
+    9  apt-get install openjdk-8-jdk
+   10  java
+   11  which apache2
+   12  apt-get install apache2
+   13  which apache2
+   14  cleae
+   15  clear
+   16  git
+   17  java
+   18  clear
+   19  exit
+   20  history
 
 
 
