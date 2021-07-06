@@ -386,6 +386,68 @@ attach
   129  docker attach a6aed21e8981
   130  history
 
+131  clear
+  132  docker ps
+  133  docker ps -a
+  134  docker start a6aed21e8981 02a829f03b08
+  135  docker ps
+  136  docker attach a6aed21e8981
+  137  docker ps -a
+  138  docker attach 02a829f03b08
+  139  clear
+  140  docker ps
+  141  docker start a6aed21e8981 02a829f03b08
+  142  docker ps
+  143  docker attach a6aed21e8981
+  144  clear
+  145  docker ps
+  146  docker inspect 02a829f03b08
+  147  ping 172.17.0.3
+  148  clear
+  149  docker run httpd
+  150  clear
+  151  docker run -d httpd
+  152  docker ps
+  153  docker run -d httpd
+  154  docker ps
+  155  docker run -d httpd
+  156  docker ps
+  157  clear
+  158  docker ps
+  159  clear
+  160  docker ps
+  161  docker run -d -p 80:80 httpd
+  162  docker ps
+  163  ifconfig
+  164  docker ps
+  165  docker run -d -p 81:80 httpd
+  166  clear
+  167  docker ps
+
+
+ 168  ls
+  169  docker cp initial-setup-ks.cfg 220b4e470a10:/tmp
+  170  docker exec 220b4e470a10 ls /tmp
+  171  rm -rf initial-setup-ks.cfg
+  172  ls
+  173  docker cp 220b4e470a10:/tmp/initial-setup-ks.cfg
+  174  clear
+  175  docker cp 220b4e470a10:/tmp/initial-setup-ks.cfg .
+  176  ls
+  177  docker diff 220b4e470a10
+  178  clear
+  179  docker ps
+  180  docker ports 2db91f0c0aaa
+  181  docker port 2db91f0c0aaa
+  182  docker port 220b4e470a10
+  183  clear
+  184  docker ps
+  185  docker rename 875357b1ddc8 raj1
+  186  docker ps
+  187  clear
+  188  docker run -d --name raj2 httpd
+  189  docker ps
+  190  history
 
 
 
