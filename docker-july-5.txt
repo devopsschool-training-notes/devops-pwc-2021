@@ -598,6 +598,19 @@ https://devopsschool.com/tutorial/docker/commands/index.html
    20  history
 
 
+ 389  docker attach 06a3d4ca8a0f
+  390  docker ps
+  391  docker ps -a
+  392  docker history ubuntu
+  393  docker commit -m"ub-up-git-java-http" -a "Rajesh kumar" 06a3d4ca8a0f ub-up-git-java-http
+  394  docker images
+  395  docker history ubuntu
+  396  docker history ub-up-git-java-http
+  397  docker run -itd ub-up-git-java-http
+  398  docker ps
+  399  docker exec 36f70eb056bc git
+  400  docker exec 36f70eb056bc java
+  401  docker exec 36f70eb056bc which apache2
 
 
 
