@@ -304,6 +304,88 @@ attach
 
 2. How to access from outside?
 
+ 50  history
+   51  clear
+   52  echo $SHELL
+   53  su rps
+   54  clear
+   55  docker ps
+   56  docker ps -a
+   57  docker create httpd
+   58  docker ps
+   59  clear
+   60  docker ps -a
+   61  docker start 02a829f03b08
+   62  docker ps
+   63  docker exec 02a829f03b08 ls
+   64  docker exec 02a829f03b08 df -kh
+   65  clear
+   66  docker exec 02a829f03b08 du -s
+   67  docker exec 02a829f03b08 du -sh
+   68  docker exec -it 02a829f03b08 /bin/bash
+   69  df -kh
+   70  clear
+   71  ps -eaf
+   72  clear
+   73  docker ps
+   74  docker exec 02a829f03b08 ps -eaf
+   75  docker create ubuntu
+   76  clear
+   77  docker ps -a
+   78  docker -itd start c0c6ba11303a
+   79  clear
+   80  docker start -itd c0c6ba11303a
+   81  docker start -d c0c6ba11303a
+   82  docker help start
+   83  clear
+   84  docker ps -a
+   85  docker rm c0c6ba11303a'
+   86  docker rm c0c6ba11303a
+   87  docker create -itd ubuntu
+   88  docker help create
+   89  clear
+   90  docker create -it ubuntu
+   91  docker ps
+   92  docker ps -a
+   93  docker start a6aed21e8981
+   94  docker ps
+   95  clear
+   96  docker ps
+   97  docker exec a6aed21e8981 ps -eaf
+   98  docker exec a6aed21e8981 kill 1
+   99  docker ps
+  100  docker ps -a
+  101  history
+  102  clear
+  103  docker ps
+  104  docker ps -a
+  105  /bin/bash
+  106  history
+  107  clear
+  108  docker ps -a
+  109  docker start a6aed21e8981
+  110  lear
+  111  docker ps
+  112  docker attach a6aed21e8981
+  113  docker exec 02a829f03b08 ps -eaf
+  114  docker attach 02a829f03b08
+  115  docker ps -a
+  116  ifconfig
+  117  clear
+  118  docker ps
+  119  docker ps -a
+  120  docker start a6aed21e8981 02a829f03b08
+  121  clear
+  122  ls
+  123  docker ps
+  124  docker inspect 02a829f03b08
+  125  clear
+  126  docker attach 02a829f03b08
+  127  clear
+  128  docker ps
+  129  docker attach a6aed21e8981
+  130  history
+
 
 
 
