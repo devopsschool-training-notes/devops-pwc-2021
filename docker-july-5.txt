@@ -616,6 +616,41 @@ https://devopsschool.com/tutorial/docker/commands/index.html
 
 
 
+===========================================
+How to create a docker image?
+------------------------------------
+Manual Method - Using container
+
+----------------------------------------------
+ubuntu
+git
+java
+httpd
+--------------
+
+
+How to create an Image?
+S1 - Register and Create a repo at hub.docker.com
+S2 - Make sure Repo name of hub.docker.com must match with local repo name
+$ docker tag old new
+S3 - docker login
+S4 - docker push
+
+
+Autom Method - using Dockerfile
+------------------------------------------------------
+
+FROM ubuntu
+MAINTAINER Rajesh Kumar
+RUN apt-get update
+RUN apt-get install git -y
+RUN touch /tmp/devopsschool.txt
+
+
+docker build -t raj1 .
+
+docker build -t raj1 -f docfile1 .
+
 
 
 
