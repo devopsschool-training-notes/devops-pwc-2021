@@ -472,6 +472,27 @@ https://devopsschool.com/tutorial/docker/commands/index.html
 
 
 
+ 265  clear
+  266  docker ps
+  267  docker logs a660ae44567e
+  268  clear
+  269  docker ps
+  270  docker logs 02a829f03b08
+  271  clear
+  272  docker stats
+  273  docker stats 220b4e470a10
+  274  docker ps
+  275  ps -eaf | grep docker
+  276  ps -eaf | grep dockerd
+  277  ps -eaf
+  278  clear
+  279  ps -eaf | grep httpd
+  280  ps -eaf | grep containerd
+  281  docker ps
+  282  docker top a660ae44567e
+  283  clear
+  284  docker events
+  285  history
 
 
 
