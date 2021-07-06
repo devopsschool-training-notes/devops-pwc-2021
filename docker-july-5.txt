@@ -450,6 +450,27 @@ attach
   190  history
 
 
+2. How to access from outside?
+
+
+run
+=====================================================================
+pull + create + start + ATTACHED TO PID 1
+
+run -d
+=====================================================================
+pull + create + start + DO NOT ATTACHED TO PID 1
+
+How to access a container outside of VM?
+$ docker run -d -p 80:80 httpd
+$ docker run -d -p 81:80 httpd
+$ docker run -d -p 82:80 httpd
+
+80:80 - HOST-IP-PORT:CONTAINER-PORT
+
+https://devopsschool.com/tutorial/docker/commands/index.html
+
+
 
 
 
