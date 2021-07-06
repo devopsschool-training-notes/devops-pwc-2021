@@ -493,6 +493,86 @@ https://devopsschool.com/tutorial/docker/commands/index.html
   283  clear
   284  docker events
   285  history
+   289  docker kill $(docker ps -q)
+  290  docker rm $(docker ps -a -q)
+  291  clar
+  292  clear
+  293  docker ps -a
+  294  docker images
+  295  docker rmi httpd ubuntu
+  296  clear
+  297  docker images
+  298  docker info
+  299  clear
+  300  cd /var/lib/docker
+  301  ls
+  302  cd overlay2
+  303  clear
+  304  ls
+  305  du -sh .
+  306  docker pull ubuntu
+  307  ls
+  308  docker images
+  309  docker history ubuntu
+  310  clear
+  311  ls
+  312  cd de3512e2876ceff2cd42380c8a07467ab1da8ddea95220a8076586beb760af8d/
+  313  ls
+  314  cd diff
+  315  ls
+  316  clear
+  317  ls
+  318  pwd
+  319  clear
+  320  ls
+  321  cd ..
+  322  ls
+  323  cd ..
+  324  ls
+  325  docker images
+  326  docker rmi ubuntu
+  327  clear
+  328  ls
+  329  docker pull httpd
+  330  ls
+  331  docker history httpd
+  332  clear
+  333  ls
+  334  du -h --max-depth=1
+  335  cd ./dd8bb1b61c6a9542b87ca2a86c02b673d07cf0835cd97e63063bbe0ae6ec4fd6
+  336  cd diff/
+  337  ls
+  338  cd ../..
+  339  ls
+  340  cd d9c614bb1fc75e9b137b1baf66381f646ae2a96f84e5ed3b900738e244092ca0/diff/
+  341  ls
+  342  clear
+  343  docker images
+  344  docker inspect httpd
+  345  clear
+  346  ls
+  347  cd ../..
+  348  ls
+  349  docker run -d httpd
+  350  dk -kh
+  351  df -kh
+  352  ls
+  353  docker run -d httpd
+  354  df -kh
+  355  ls
+  356  clear
+  357  df -kh
+  358  docker ps
+  359  docker stop 53157e7f3899 4934fd179681
+  360  dk -kh
+  361  df -kh
+  362  docker start 53157e7f3899 4934fd179681
+  363  ls
+  364  df -kh
+  365  clear
+  366  history
+[root@localhost overlay2]#
+
 
 
 
