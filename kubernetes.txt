@@ -224,6 +224,34 @@ CODE of the POD.yaml must be in CODE Block.
 $ Share a URL WITH ME.
 
 
+ 118  clear
+  119  ls
+  120  vi rc.yaml
+  121  kubectl apply -f rc.yaml
+  122  vi rc.yaml
+  123  kubectl get pod
+  124  vi rc.yaml
+  125  kubectl apply -f rc.yaml
+  126  kubectl get pod
+  127  clear
+  128  kubectl get pod
+  129  clear
+  130  ls
+  131  clear
+  132  ls
+  133  kubectl get pods
+  134  clear
+  135  kubectl get pods
+  136  clear
+  137  kubectl get pods
+  138  kubectl delete pod replicationcontroller-example-zl2xb replicationcontroller-example-xxt4g replicationcontroller-example-whjmw replicationcontroller-example-v65xh replicationcontroller-example-t84j4 replicationcontroller-example-t29hs replicationcontroller-example-rfj8q replicationcontroller-example-pwqsk
+  139  kubectl get pods
+  140  kubectl get rc
+  141  clear
+  142  kubectl get rc
+  143  kubectl delete rc replicationcontroller-example
+  144  kubectl get rc
+  145  kubectl get pods
 
 
 
