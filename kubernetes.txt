@@ -417,3 +417,58 @@ FIELD:    type <string>
 DESCRIPTION:
      Type of deployment. Can be "Recreate" or "RollingUpdate". Default is
      RollingUpdate.
+
+
+
+329  ls
+  330  kubectl create -f pod1.yaml
+  331  kubectl create -f pod2.yaml
+  332  clear
+  333  kubectl get pod -o wide --show-labeles
+  334  kubectl get pod -o wide --show-labels
+  335  curl http://10.44.0.1
+  336  curl http://10.44.0.2
+  337  kubectl create service -h
+  338  clear
+  339  kubectl create service clusterip -h
+  340  clearclear
+  341  clear
+  342  kubectl create service clusterip my-cs --tcp=5678:80
+  343  kubectl get svc
+  344  kubectl describe svc my-cs
+  345  kubectl get pod -o wide --show-labels
+  346  curl http://10.96.76.254:5678
+  347  kubectl edit svc my-cs
+  348  kubectl describe svc my-cs
+  349  curl http://10.96.76.254:5678
+  350  clear
+  351  watch curl http://10.96.76.254:5678
+  352  clear
+  353  ls
+  354  clear
+  355  kubectl get svc
+  356  kubectl create service clusterip -h
+  357  kubectl create service -h
+  358  kubectl get svc
+  359  kubectl create service nodeport -h
+  360  kubectl create service nodeport my-ns --tcp=5678:80
+  361  clear
+  362  kubectl get svc
+  363  kubectl describe svc my-ns
+  364  kubectl get pod -o wide --show-labels
+  365  kubectl edit svc my-ns
+  366  kubectl describe svc my-ns
+  367  curl http://10.107.0.203:5678
+  368  ifconfig
+  369  kubectl get svc
+  370  history
+  371  clear
+  372  kubectl create deployment my-dep --image=scmgalaxy/nginx-devopsschoolv1 --replicas=5
+  373  kubectl expose -h
+  374  clear
+  375  kubectl expose svc -h
+  376  clear
+  377  kubectl get deploy
+  378  kubectl expose deployment my-dep --port=80 --target-port=80 --type=NodePort
+  379  kubectl get svc
+  380  kubectl describe svc my-dep
