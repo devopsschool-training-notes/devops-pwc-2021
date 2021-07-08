@@ -408,3 +408,12 @@ curl http://ip-of-pod
 
 
 
+[root@rajesh k8]# kubectl explain deploy.spec.strategy.type
+KIND:     Deployment
+VERSION:  apps/v1
+
+FIELD:    type <string>
+
+DESCRIPTION:
+     Type of deployment. Can be "Recreate" or "RollingUpdate". Default is
+     RollingUpdate.
