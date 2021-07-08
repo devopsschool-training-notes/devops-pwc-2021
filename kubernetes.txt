@@ -1,0 +1,229 @@
+hostnamectl set-hostname rajesh.master.com
+
+To start using your cluster, you need to run the following as a regular user:
+
+  mkdir -p $HOME/.kube
+  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+  sudo chown $(id -u):$(id -g) $HOME/.kube/config
+
+Alternatively, if you are the root user, you can run:
+
+  export KUBECONFIG=/etc/kubernetes/admin.conf
+
+You should now deploy a pod network to the cluster.
+Run "kubectl apply -f [podnetwork].yaml" with one of the options listed at:
+  https://kubernetes.io/docs/concepts/cluster-administration/addons/
+
+Then you can join any number of worker nodes by running the following on each as root:
+
+kubeadm join 172.20.0.149:6443 --token hkg55c.4x34sua47vxw5sfb \
+        --discovery-token-ca-cert-hash sha256:1f2f557fdc26451486d1274a7a188bf075d526fab2384149f244c6983424c7cf
+
+
+NAME                              SHORTNAMES   APIVERSION                             NAMESPACED   KIND
+bindings                                       v1                                     true         Binding
+componentstatuses                 cs           v1                                     false        ComponentStatus
+configmaps                        cm           v1                                     true         ConfigMap
+endpoints                         ep           v1                                     true         Endpoints
+events                            ev           v1                                     true         Event
+limitranges                       limits       v1                                     true         LimitRange
+namespaces                        ns           v1                                     false        Namespace
+nodes                             no           v1                                     false        Node
+persistentvolumeclaims            pvc          v1                                     true         PersistentVolumeClaim
+persistentvolumes                 pv           v1            
+
+
+                         false        PersistentVolume
+pods                              po           v1                                     true         Pod
+podtemplates                                   v1                                     true         PodTemplate
+replicationcontrollers            rc           v1                                     true         ReplicationController
+resourcequotas                    quota        v1                                     true         ResourceQuota
+secrets                                        v1                                     true         Secret
+serviceaccounts                   sa           v1                                     true         ServiceAccount
+services                          svc          v1                                     true         Service
+mutatingwebhookconfigurations                  admissionregistration.k8s.io/v1        false        MutatingWebhookConfiguration
+validatingwebhookconfigurations                admissionregistration.k8s.io/v1        false        ValidatingWebhookConfiguration
+customresourcedefinitions         crd,crds     apiextensions.k8s.io/v1                false        CustomResourceDefinition
+apiservices                                    apiregistration.k8s.io/v1              false        APIService
+controllerrevisions                            apps/v1                                true         ControllerRevision
+daemonsets                        ds           apps/v1                                true         DaemonSet
+deployments                       deploy       apps/v1                                true         Deployment
+replicasets                       rs           apps/v1                                true         ReplicaSet
+statefulsets                      sts          apps/v1                                true         StatefulSet
+tokenreviews                                   authentication.k8s.io/v1               false        TokenReview
+localsubjectaccessreviews                      authorization.k8s.io/v1                true         LocalSubjectAccessReview
+selfsubjectaccessreviews                       authorization.k8s.io/v1                false        SelfSubjectAccessReview
+selfsubjectrulesreviews                        authorization.k8s.io/v1                false        SelfSubjectRulesReview
+subjectaccessreviews                           authorization.k8s.io/v1                false        SubjectAccessReview
+horizontalpodautoscalers          hpa          autoscaling/v1                         true         HorizontalPodAutoscaler
+cronjobs                          cj           batch/v1                               true         CronJob
+jobs                                           batch/v1                               true         Job
+certificatesigningrequests        csr          certificates.k8s.io/v1                 false        CertificateSigningRequest
+leases                                         coordination.k8s.io/v1                 true         Lease
+endpointslices                                 discovery.k8s.io/v1                    true         EndpointSlice
+events                            ev           events.k8s.io/v1                       true         Event
+ingresses                         ing          extensions/v1beta1                     true         Ingress
+flowschemas                                    flowcontrol.apiserver.k8s.io/v1beta1   false        FlowSchema
+prioritylevelconfigurations                    flowcontrol.apiserver.k8s.io/v1beta1   false        PriorityLevelConfiguration
+ingressclasses                                 networking.k8s.io/v1                   false        IngressClass
+ingresses                         ing          networking.k8s.io/v1                   true         Ingress
+networkpolicies                   netpol       networking.k8s.io/v1                   true         NetworkPolicy
+runtimeclasses                                 node.k8s.io/v1                         false        RuntimeClass
+poddisruptionbudgets              pdb          policy/v1                              true         PodDisruptionBudget
+podsecuritypolicies               psp          policy/v1beta1                         false        PodSecurityPolicy
+clusterrolebindings                            rbac.authorization.k8s.io/v1           false        ClusterRoleBinding
+clusterroles                                   rbac.authorization.k8s.io/v1           false        ClusterRole
+rolebindings                                   rbac.authorization.k8s.io/v1           true         RoleBinding
+roles                                          rbac.authorization.k8s.io/v1           true         Role
+priorityclasses                   pc           scheduling.k8s.io/v1                   false        PriorityClass
+csidrivers                                     storage.k8s.io/v1                      false        CSIDriver
+csinodes                                       storage.k8s.io/v1                      false        CSINode
+csistoragecapacities                           storage.k8s.io/v1beta1                 true         CSIStorageCapacity
+storageclasses                    sc           storage.k8s.io/v1                      false        StorageClass
+volumeattachments                              storage.k8s.io/v1                      false        VolumeAttachment
+[root@rajesh ~]#
+
+
+ 31  kubectl get nodes
+   32  kubectl get pods --all-namespaces
+   33  kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl version | base64 | tr -d '\n')"
+   34  kubectl get nodes
+   35  kubectl get pods --all-namespaces
+   36  clear
+   37  kubectl get pods
+   38  kubectl get nodes
+   39  clear
+   40  kubectl
+   41  kubectl api-resources
+   42  clear
+   43  kubectl get ns
+   44  kubectl get pods --all-namespaces
+
+==========================================
+
+namespace			
+pod					ec2-instance or vm or container
+replicationcontroller			asg
+deployment				asg+++++
+service					network Load Balancer
+
+
+===============================================
+56 API Resources - 56 API -->> API SERVER (KIND)
+
+--------------------------------------------------------------
+API 
+	GET
+	POST
+	PUT
+	DELETE
+			
+	CRUD
+	-----------------------------
+	CREATE
+		YAML		create -f yml
+		CMD		create
+		
+	READ
+		YAML		
+		CMD		get
+				descrribe
+	UPDATE
+		YAML		apply -f yml
+		CMD		edit
+	DELETE
+		YAML		delete -f yml
+		CMD		delete
+
+
+
+
+ 44  kubectl get pods --all-namespaces
+   45  history
+   46  clear
+   47  kubectl
+   48  clear
+   49  kubectl get ns
+   50  kubectl create ns rajesh
+   51  kubectl get ns
+   52  kubectl edit ns rajesh
+   53  kubectl get ns
+   54  kubectl describe ns rajesh
+   55  clear
+   56  kubectl delete  ns rajesh
+
+pod
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nodehelloworld.example.com
+  labels:
+    app: helloworld
+spec:
+  containers:
+  - name: devopsschool1
+    image: scmgalaxy/nginx-devopsschoolv1
+    ports:
+    - name: nginx-port
+      containerPort: 80
+
+
+
+  56  kubectl delete  ns rajesh
+   57  history
+   58  clear
+   59  ls
+   60  mkdir k8
+   61  cd k8
+   62  ls
+   63  clear
+   64  vi pod1.yaml
+   65  clear
+   66  ls
+   67  kubectl create -f pod1.yaml
+   68  kubectl create -f pod1.yaml -n=rajesh
+   69  kubectl create ns rajesh
+   70  kubectl create -f pod1.yaml -n=rajesh
+   71  kubectl create -f pod1.yaml
+   72  kubectl get pods
+   73  kubectl get pods -o wide
+   74  curl http://10.44.0.1
+   75  kubectl get pods --all-namespaces
+   76  kubectl get pods -n=rajesh
+   77  kubectl get pods -n=rajesh -o wide
+   78  clear
+   79  ls
+   80  kubectl get pods
+   81  kubectl edit pod nodehelloworld.example.com
+   82  kubectl describe pod nodehelloworld.example.com
+   83  :q
+   84  clear
+   85  ls
+   86  vi pod1.yaml
+   87  kubectl apply -f pod1.yaml
+   88  kubectl describe pod nodehelloworld.example.com
+   89  clear
+   90  ls
+   91  kubectl delete -f pod1.yaml
+   92  kubectl get pods -n=rajesh
+   93  kubectl delete pod nodehelloworld.example.com -n=rajesh
+
+
+
+LAB -> YOU WOULD DO WHAT I DID
+ASSIGNMENT:
+- Write pom.yaml which contains 2 container
+	- nginx # 80
+	- mysql # 3306
+
+& Share on BestDevOpsSchool.com 
+Title - You can keep anything.
+Content - 
+CODE of the POD.yaml must be in CODE Block.
+$ Share a URL WITH ME.
+
+
+
+
+
