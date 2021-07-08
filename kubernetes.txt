@@ -253,5 +253,158 @@ $ Share a URL WITH ME.
   144  kubectl get rc
   145  kubectl get pods
 
+kubectl create deployment my-dep --image=scmgalaxy/nginx-devopsschoolv1 --replicas=3
+
+kubectl scale--replicas=2 deployment/my-dep
+
+
+
+
+
+
+
+[root@rajesh k8]# kubectl explain deploy.spec.strategy.rollingUpdate
+KIND:     Deployment
+VERSION:  apps/v1
+
+RESOURCE: rollingUpdate <Object>
+
+DESCRIPTION:
+     Rolling update config params. Present only if DeploymentStrategyType =
+     RollingUpdate.
+
+     Spec to control the desired behavior of rolling update.
+
+FIELDS:
+   maxSurge     <string>
+     The maximum number of pods that can be scheduled above the desired number
+     of pods. Value can be an absolute number (ex: 5) or a percentage of desired
+     pods (ex: 10%). This can not be 0 if MaxUnavailable is 0. Absolute number
+     is calculated from percentage by rounding up. Defaults to 25%. Example:
+     when this is set to 30%, the new ReplicaSet can be scaled up immediately
+     when the rolling update starts, such that the total number of old and new
+     pods do not exceed 130% of desired pods. Once old pods have been killed,
+     new ReplicaSet can be scaled up further, ensuring that total number of pods
+     running at any time during the update is at most 130% of desired pods.
+
+   maxUnavailable       <string>
+     The maximum number of pods that can be unavailable during the update. Value
+     can be an absolute number (ex: 5) or a percentage of desired pods (ex:
+     10%). Absolute number is calculated from percentage by rounding down. This
+     can not be 0 if MaxSurge is 0. Defaults to 25%. Example: when this is set
+     to 30%, the old ReplicaSet can be scaled down to 70% of desired pods
+     immediately when the rolling update starts. Once new pods are ready, old
+     ReplicaSet can be scaled down further, followed by scaling up the new
+     ReplicaSet, ensuring that the total number of pods available at all times
+     during the update is at least 70% of desired pods.
+
+
+
+ 152  kubectl create -h
+  153  clear
+  154  kubectl create deployment -h
+  155  clear
+  156  kubectl get deploy
+  157  kubectl get rc
+  158  kubectl get pods
+  159  kubectl create deployment my-dep --image=scmgalaxy/nginx-devopsschoolv1 --replicas=3
+  160  kubectl get pods
+  161  kubectl get deploy
+  162  kubectl edit deploy my-dep
+  163  kubectl get deploy
+  164  kubectl
+  165  kubectl scale
+  166  kubectl scale -h
+  167  clear
+  168  kubectl get deploy
+  169  kubectl scale--replicas=2 deployment/my-dep
+  170  kubectl scale --replicas=2 deployment/my-dep
+  171  kubectl get deploy
+  172  kubectl get pods
+  173  kubectl delete pod my-dep-747b4ffb56-t92dp my-dep-747b4ffb56-tsz8s
+  174  kubectl get pods
+  175  clear
+  176  ls
+  177  kubectl rollout -h
+  178  kubectl rollout history deploy/my-dep
+  179  clear
+  180  kubectl get -o wide
+  181  kubectl get pods --o wide
+  182  kubectl get pods -o wide
+  183  curl http://10.44.0.2
+  184  curl http://10.44.0.1
+  185  kubectl rollout history deploy/my-dep
+  186  clear
+  187  ls
+  188  kubectl edit deploy/my-dep
+  189  kubectl get pods -o wide
+  190  clear
+  191  kubectl get pods -o wide
+  192  curl http://10.44.0.2
+  193  curl http://10.44.0.3
+
+ 194  kubectl rollout history deploy/my-dep
+  195  clear
+  196  ls
+  197  clear
+  198  kubectl explain
+  199  kubectl explain ns
+  200  kubectl explain ns.spec
+  201  kubectl explain pods
+  202  kubectl explain pods.spec
+  203  kubectl explain pods.spec.containers
+  204  clear
+  205  kubectl explain deploy
+  206  kubectl explain deploy.spec
+  207  kubectl explain deploy.spec.strategy
+  208  kubectl explain deploy.spec.strategy.rollingUpdate
+  209  history
+  210  clear
+  211  kubectl get deploy
+  212  kubectl delete deploy my-dep
+  213  kubectl rollout undo -h
+  214  clear
+  215  ls
+  216  kubectl get deploy
+  217  kubectl create deployment my-dep --image=scmgalaxy/nginx-devopsschoolv1 --replicas=15
+  218  kubectl rollout history deploy/my-dep
+  219  kubectl rollout status deploy/my-dep
+  220  kubectl get pods -o wide
+  221  curl http://10.44.0.5
+  222  kubectl edit deploy/my-dep
+  223  kubectl rollout history deploy/my-dep
+  224  kubectl rollout status deploy/my-dep
+  225  kubectl get pods -o wide
+  226  curl http://10.44.0.12
+  227  kubectl rollout status deploy/my-dep
+  228  kubectl rollout history deploy/my-dep
+  229  clear
+  230  kubectl rollout undo deploy/my-dep --to-revision=1
+  231  kubectl get pods -o wide
+  232  kubectl rollout status deploy/my-dep
+  233  kubectl get pods -o wide
+  234  curl http://10.44.0.10
+  235  history
+
+
+Rollout
+kubectl create deployment my-dep --image=scmgalaxy/nginx-devopsschoolv1 --replicas=15
+kubectl rollout history deploy/my-dep
+kubectl rollout status deploy/my-dep
+kubectl get pods -o wide
+curl http://ip-of-pod
+kubectl edit deploy/my-dep # Change image to scmgalaxy/nginx-devopsschoolv2
+kubectl rollout history deploy/my-dep
+kubectl rollout status deploy/my-dep
+kubectl get pods -o wide
+curl http://ip-of-pod
+
+Rollback
+kubectl rollout history deploy/my-dep
+kubectl rollout undo deploy/my-dep --to-revision=1
+kubectl rollout status deploy/my-dep
+kubectl get pods -o wide
+curl http://ip-of-pod
+
 
 
