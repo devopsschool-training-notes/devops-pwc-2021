@@ -101,7 +101,51 @@ ansible all -i 172.20.0.149,172.20.0.122, -m copy -a"src=index.html dest=/var/ww
 ansible all -i 172.20.0.149,172.20.0.122, -m service -a"name=httpd state=started" -u root -k
 
 
+--------------------------------------------------
+--------------------------------------------------
+Inventory
+--------------------------------------------------
+is a list IP address of ARS
+	Command line - - 172.20.0.149,172.20.0.122,
+	file - inventory
+		-----------------
+		172.20.0.149
+		172.20.0.122
+		-----------------------------
+		has group
+			- all (default)
+		
+	script
+	--------------------------
 
+inventory
+------------------
+172.20.0.149
+172.20.0.122
+
+
+inventory
+------------------
+[web]
+172.20.0.149
+172.20.0.122
+
+[db]
+1.2.2.3
+44.4.5.6
+6.7.78.7
+
+
+ansible web -i inventory -m yum -a"name=httpd state=present" -u root -k
+ansible web -i inventory -m copy -a"src=index.html dest=/var/www/html/index.html" -u root -k 
+ansible web -i inventory -m service -a"name=httpd state=started" -u root -k
+
+
+
+
+--------------------------------------------------
+Playbook
+--------------------------------------------------
 
 
 
