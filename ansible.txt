@@ -149,6 +149,87 @@ Playbook
 
 
 
+--------------------------------------------------
+Playbook
+--------------------------------------------------
+
+ansible web -i inventory -m yum -a"name=httpd state=present" -u root -k
+ansible web -i inventory -m copy -a"src=index.html dest=/var/www/html/index.html" -u root -k 
+ansible web -i inventory -m service -a"name=httpd state=started" -u root -k
+ansible web -i inventory -m yum -a"name=httpd state=present" -u root -k
+ansible web -i inventory -m copy -a"src=index.html dest=/var/www/html/index.html" -u root -k 
+ansible web -i inventory -m service -a"name=httpd state=started" -u root -k
+ansible web -i inventory -m yum -a"name=httpd state=present" -u root -k
+ansible web -i inventory -m copy -a"src=index.html dest=/var/www/html/index.html" -u root -k 
+ansible web -i inventory -m service -a"name=httpd state=started" -u root -k
+ansible web -i inventory -m yum -a"name=httpd state=present" -u root -k
+ansible web -i inventory -m copy -a"src=index.html dest=/var/www/html/index.html" -u root -k 
+ansible web -i inventory -m service -a"name=httpd state=started" -u root -k
+ansible web -i inventory -m yum -a"name=httpd state=present" -u root -k
+ansible web -i inventory -m copy -a"src=index.html dest=/var/www/html/index.html" -u root -k 
+ansible web -i inventory -m service -a"name=httpd state=started" -u root -k
+ansible web -i inventory -m yum -a"name=httpd state=present" -u root -k
+ansible web -i inventory -m copy -a"src=index.html dest=/var/www/html/index.html" -u root -k 
+ansible web -i inventory -m service -a"name=httpd state=started" -u root -k
+ansible web -i inventory -m yum -a"name=httpd state=present" -u root -k
+ansible web -i inventory -m copy -a"src=index.html dest=/var/www/html/index.html" -u root -k 
+ansible web -i inventory -m service -a"name=httpd state=started" -u root -k
+ansible web -i inventory -m yum -a"name=httpd state=present" -u root -k
+ansible web -i inventory -m copy -a"src=index.html dest=/var/www/html/index.html" -u root -k 
+ansible web -i inventory -m service -a"name=httpd state=started" -u root -k
+
+----------------ALL IN ONE FILE -------------------------------
+-----------------------------------------------------------
+Playbook
+	- yaml
+	- https://www.devopsschool.com/blog/yaml-tutorial-specification-rules-and-syntax/
+	- Contains - PLAY(S)
+
+ansible web -i inventory -m yum -a"name=httpd state=present" -u root -k
+ansible web -i inventory -m copy -a"src=index.html dest=/var/www/html/index.html" -u root -k 
+ansible web -i inventory -m service -a"name=httpd state=started" -u root -k
+
+
+What is PLAY?
+https://www.devopsschool.com/blog/anatomy-of-ansible-play-defined/
+	Contains
+	- Hosts - its a group of the inventory - localhost, all, web, db
+	- Tasks - Its a collection of Module and its param.
+			Module1 & its param
+			Moulde2 & its param
+			Moulde3 & its param
+
+- name: Start the first play
+  hosts: webservers
+  
+  tasks:
+  - name: Install the latest version of Apache
+    yum:
+      name: httpd
+      state: latest
+  - name: Copy file with owner and permissions
+    copy:
+      src: index.html
+      dest: /var/www/html/index.html
+  - name: Start service httpd, if not started
+    service:
+      name: httpd
+      state: started
+
+
+- name: Start the first play
+  hosts: db
+  
+  tasks:
+  - name: Install the latest version of Apache
+    yum:
+      name: mysql
+      state: latest
+  - name: Start service httpd, if not started
+    service:
+      name: mysqld
+      state: started
+
 
 
 
