@@ -1,4 +1,50 @@
- 389  wget https://get.helm.sh/helm-v3.6.2-linux-amd64.tar.gz
+
+A Quick Tutorial of Helm
+--------------------------------------------
+What is Package Manager?
+Package Manager contains many software package which is easy to install - remove and update. example of package manager includes yum, apt, nuget, chcoclate, play store, apple store.
+
+
+What is Helm?
+- Package Manager for installing kubernetes package
+- kubernetes helm package is being called "CHART"
+
+What is kubernetes helm package?
+kubernetes helm package is collection of kubernetes API resources yaml file which can be stored with certain structure for easy one click install-update-remove.
+
+How to install helm?
+- helm client must be installed in kubectl workstation
+- Download your desired version
+- Unpack it (tar -zxvf helm-v3.0.0-linux-amd64.tar.gz)
+- Find the helm binary in the unpacked directory, and move it to its desired destination (mv linux-amd64/helm /usr/local/bin/helm)
+https://helm.sh/docs/intro/install/
+
+
+How to use helm for Install - updating - removing a helm package called "CHART"?
+
+Step 1 - Visit a helm.sh --> https://artifacthub.io/
+
+Step 2 - Search & Identify a desire chart which you want to install in k8 cluster?
+
+Step 3 - Add helm repo e.g tomcat chat
+$ helm repo add bitnami https://charts.bitnami.com/bitnami
+
+Step 4 - Install chart eg. tomcat
+$ helm install my-release bitnami/tomcat
+
+
+How to create custom helm chart?
+$ 
+
+$ How to install Local chart?
+$ helm install scmgalaxy ./scmgalaxy 
+
+
+
+
+
+
+389  wget https://get.helm.sh/helm-v3.6.2-linux-amd64.tar.gz
   390  clear
   391  ls
   392  tar -zxvf helm-v3.6.2-linux-amd64.tar.gz
