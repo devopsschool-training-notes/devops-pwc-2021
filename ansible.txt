@@ -1,0 +1,108 @@
+What is Ansible?
+-------------------------------
+Config mgmt tool
+Release
+	ansible		- Command - FREE
+	ansible tower	- GUI - PAID
+	ansible awx 	- GUI but FREE but no support & latest not tested version
+Written python
+From Redhat
+
+What is Config mgmt?
+-------------------
+	SERVER(S) config mgmt
+
+What is in the SERVER so we manage config of it?
+------------------------------------------
+			ACTION					param
+file			CREATE - EDIT - DELETE
+directory		CREATE - EDIT - DELETE
+package			install - remove - update 
+services		start - stop - restart - enable - disable
+user			add - edit - delete
+groups			add - edit - delete
+
+
+Why we need it?
+- We want to change CONFIG in multiple server(S) @ a time.
+- Easy to learn - write - test - debug - share - extend
+			Compare to
+			--- python - perl - shell - bash - batch
+- Platform indep.
+		LINUX + WINDOWS
+- Save time in deployment
+
+Other tools - https://devopsschool.com/path/
+
+How Ansible Works? Aka Ansible Architect.
+================================================
+
+Human -> Ansible Control Server --> Ansible Remote Server(S)
+------------------------------------------------------	
+	Ansible
+		Ansible Tools
+		Plugins		- A Code which extend a fea of Ansible
+		Modules		- A Code which run in REMOTE server 
+		Ansible Config file
+	Adhoc Command
+	Inventory
+	Playbook
+	
+
+How ACS talk to ARS?
+------------------------------------------------------
+	LINUX			WINDOWS + LINUX
+	64 BIT			ANY
+	PYTHON			LINUX - PYTHON
+				WINDOWS - POWER SHELL + DOTNET
+		---SSH----------LINUX
+		---WINRM-------- WINDOWS
+
+---------------------------------------------------------------
+How to install Ansible in ACS?
+https://www.devopsschool.com/blog/how-to-install-ansible-in-centos-7-rhel-7/
+
+ACS = Centos1
+ARS = Centos1 + Centos2 
+
+
+
+------------------------------
+				TOOL
+		Plugins		FEATURE OR EXTRA EXTRA 
+		Modules		ITS a CODE which u RUN and see a Custom Results
+		ADONS		PLUGINS
+		EXTENTION	PLUGINS
+-----------------------------
+Ansible Adhoc Command
+============================================
+What you want to do in LOCAL Machine?
+What you want to do in Remote Machine?
+What you want to do in Remote Machine(S)?
+-----------------------------
+
+Install one package(httpd)
+Copy a file - index.html
+Start a service
+
+$ ansible 
+
+
+Module 
+- https://docs.ansible.com/ansible/2.9/modules/modules_by_category.html
+
+ansible localhost -m yum -a"name=httpd state=present"
+ansible localhost -m copy -a"src=index.html dest=/var/www/html/index.html"
+ansible localhost -m service -a"name=httpd state=started"
+
+
+
+
+
+
+
+
+
+
+
+
