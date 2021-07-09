@@ -96,10 +96,9 @@ ansible localhost -m copy -a"src=index.html dest=/var/www/html/index.html"
 ansible localhost -m service -a"name=httpd state=started"
 
 
-ansible -i 172.20.0.149,172.20.0.122, -m yum -a"name=httpd state=present" -u root -k
-ansible -i 172.20.0.149,172.20.0.122, -m copy -a"src=index.html dest=/var/www/html/index.html" -u root -k 
-ansible -i 172.20.0.149,172.20.0.122, -m service -a"name=httpd state=started" -u root -k
-
+ansible all -i 172.20.0.149,172.20.0.122, -m yum -a"name=httpd state=present" -u root -k
+ansible all -i 172.20.0.149,172.20.0.122, -m copy -a"src=index.html dest=/var/www/html/index.html" -u root -k 
+ansible all -i 172.20.0.149,172.20.0.122, -m service -a"name=httpd state=started" -u root -k
 
 
 
