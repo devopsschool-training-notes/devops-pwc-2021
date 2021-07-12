@@ -1,0 +1,9 @@
+cd /opt/
+wget https://dl.grafana.com/oss/release/grafana-8.0.5.linux-amd64.tar.gz
+tar -zxvf grafana-8.0.5.linux-amd64.tar.gz
+cd grafana-8.0.5
+cd bin
+nohup ./grafana-server &
+ps -eaf | grep gra
+
+https://www.devopsschool.com/blog/install-and-configure-grafana-in-rhel-7/
