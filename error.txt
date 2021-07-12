@@ -1,0 +1,20 @@
+Prometheus Error - 1
+
+Prometheus Error - 1
+
+Warning: Error fetching server time: Detected 46.76300001144409 seconds time difference between your browser and the server. Prometheus relies on accurate time and time drift might cause unexpected query results.
+
+
+Prometheus Error - 2
+
+level=warn ts=2021-07-12T07:48:13.233Z caller=scrape.go:1507 component="scrape manager" scrape_pool=prometheus target=http://localhost:9090/metrics msg="Error on ingesting samples that are too old or are too far into the future" num_dropped=855
+level=warn ts=2021-07-12T07:48:13.234Z caller=scrape.go:1254 component="scrape manager" scrape_pool=prometheus target=http://localhost:9090/metrics msg="Append failed" err="out of bounds"
+level=warn ts=2021-07-12T07:48:13.234Z caller=scrape.go:1203 component="scrape manager" scrape_pool=prometheus target=http://localhost:9090/metrics msg="Appending scrape report failed" err="out of bounds"
+level=warn ts=2021-07-12T07:48:15.781Z caller=scrape.go:1507 component="scrape manager" scrape_pool=node target=http://localhost:9100/metrics msg="Error on ingesting samples that are too old or are too far into the future" num_dropped=970
+level=warn ts=2021-07-12T07:48:15.781Z caller=scrape.go:1203 component="scrape manager" scrape_pool=node target=http://localhost:9100/metrics msg="Appending scrape report failed" err="out of bounds"
+
+
+Solution # 1 
+
+Setting my targets to honor_timestamps: false
+delete a "data" directory and restrat prom server
