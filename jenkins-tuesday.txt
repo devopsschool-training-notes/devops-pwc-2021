@@ -133,5 +133,46 @@ Method 7 – Trigger another job after this Job AKA Post Build Action => Build O
 
 Method 8 – Trigger a Jenkins jobs using Jenkins command line jar file
 
+=================================================
+Feedback
+	EMAIL
+	- Mailer plugins
+	- Extn Email Plugins
+
+
+	CHAT
+	- Google 
+	- Slack
+	- team
+
+
+	DASHBOARD
+	- using Jobs - Build PIPELINE
+	- using Code - Pipeline
+
+
+
+
+
+Assignment:
+=================================
+Write a Notes on BestDevOps.com
+Title - You decide
+	Content -
+	define "What is jenkins" in 15 Bullet points - 
+	List out top 10 popular Jenkins Plugins
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
