@@ -1,0 +1,61 @@
+What is jenkins?
+-------------------------------
+	CI tool
+	Release
+		jenkins		- community - free  
+		enterprise jenkins
+		jenkinsx
+		blueocean
+	Dev in JAVA
+		- Platform independent
+		- JRE - JDK 
+	Powered by Very strong community
+	Powered by 1800 plugins means 1800 feature mean 1800 integration	
+	- https://plugins.jenkins.io/
+	Version 
+		2.X
+	
+	
+What is Cont Integ?
+------------------------------
+Auto Build + Auto Testing
+-----------------------------
+	Imm Feedback
+
+Continously integrate
+	- DevOps TEAM
+	- Phases
+	- DevOps Tools
+
+Architect ---Dev ----Dev ----Dev ---Dev ---OPS ---OPS -------Ops--------QA -----Mgr
+------------------------------------------------------------------------------------
+PLAN -> Code -> Analyze -> Build -> UT -> Pakage -> Archive -> Deploy2Q -> AT -> CC
+-------------------------------------------------------------------------------------
+JIRA + Git --> SonarQube -> Maven -> Junit-> Packer-> Artifactory -> Ansible -> Selenium -> Jacoco
+---------------------------------------------------------------------------------------------------
+					Jenkins
+
+						Integ all tools
+						Scheduling
+						Feedback
+
+Others
+- Teamcity - Bamboo - circle-ci- gitlab ci - ubuild
+===================================================================
+https://devopsschool.com/path/
+
+
+How to install it?
+-------------------------------------------
+- https://www.devopsschool.com/tutorial/jenkins/jenkins-installation-and-configuration.html
+- JAVA - https://www.devopsschool.com/blog/complete-guide-of-java-installation-in-linux/
+
+
+
+
+
+
+
+
+
+
