@@ -107,8 +107,31 @@ How you want a feedback of this job?
 Ref- https://www.devopsschool.com/blog/configure-jenkins-first-job-of-java-code-base-with-maven-build-tool/
 
 
+FOLDER
 
 
+LIST VIEW
+
+
+Scheduling
+==============
+https://www.devopsschool.com/blog/how-to-schedule-and-trigger-a-jenkins-job-automatically/
+
+Method 1 – AT CERTAIN TIME AKA Build periodically
+
+Method 2 – AT CERTAIN TIME BUT Build only when there is Code changes AKA Poll SCM
+
+Method 3 – Trigger using command line or script AKA Trigger builds remotely (e.g., from scripts)
+
+Method 4 – Trigger this job if other job is triggerred AKA Build after other projects are built
+
+
+Method 5 – Trigger a job when there is PUSH into Github AKA GitHub hook trigger for GITScm polling
+Method 6 – Trigger a job when there is PUSH into Bitbucket AKA GitHub hook trigger for GITScm polling
+
+Method 7 – Trigger another job after this Job AKA Post Build Action => Build Other project
+
+Method 8 – Trigger a Jenkins jobs using Jenkins command line jar file
 
 
 
