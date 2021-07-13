@@ -51,7 +51,60 @@ How to install it?
 - JAVA - https://www.devopsschool.com/blog/complete-guide-of-java-installation-in-linux/
 
 
+How do we get started?
+===============================
+Nothing is Required - Everything is Optional in jenkins
+	- JOB - Item - Project
+	- node - agent - slave
+------------------------------------------------------
+Secret Formula
+-------------------------
 
+Secret formula to work with Jenkins?
+=========================================
+What is your Technology?
+				COMPLER/Int		version
+		Java		JDK 			?	
+		dotnet
+		node
+		python
+		ruby
+
+Where is the code?	
+				repo loc	access
+		git	
+		svn
+		p4
+		tfs
+	
+What is your builders? A Master Script which run and everything done.
+		Anything
+		maven	pom.xml		goal	compile -> test -> package 
+		ant	build.xml	target	compile -> test -> package		
+		gradle	gradle.build	Tasks	compile -> test -> package
+		msbuild	default.msbuild target	compile -> test -> package	
+
+	
+How frequenly you want this job to be triggered?
+		hourly
+
+How you want a feedback of this job?
+		email - rajesh@devopsschool.com
+------------------------------------- 
+What is your Technology?
+		Java
+Where is the code?
+		https://github.com/devopsschool-demo-labs-projects/helloworld-java-maven
+How frequenly you want this job to be triggered?
+		hourly
+What is your builders?
+		maven
+		- goal	compile -> test -> package 
+How you want a feedback of this job?
+		email to rajesh@devopsschool.com
+
+======================================================================================
+Ref- https://www.devopsschool.com/blog/configure-jenkins-first-job-of-java-code-base-with-maven-build-tool/
 
 
 
