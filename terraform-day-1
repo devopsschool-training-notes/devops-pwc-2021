@@ -1,0 +1,74 @@
+What is terraform?
+	- Code for Infra
+
+Why terraform?
+	- in infra we have so many platforms/tools/runtime
+	- We want to automate it
+
+How to install terraform in windows?
+- Download a Terraform from https://www.terraform.io/downloads.html
+- Extract it C:\tools\hashicorp\terraform [ filename - terraform.exe ]
+- ADD "C:\tools\hashicorp\terraform" into PATH.
+- open a cmd and run $ terraform
+- open a cmd and run $ terraform version
+
+
+$ wget https://releases.hashicorp.com/terraform/1.0.2/terraform_1.0.2_linux_amd64.zip
+$ unzip terraform_1.0.2_linux_amd64.zip
+$ chmod 755 terraform
+$ mv terraform /usr/local/bin
+$ terraform
+$ terraform version
+===================================================
+How Terraform works? Terraform Architecutre
+
+Human --> filename.tf   --> terraform 		---> Providers --> API 
+	 -------------
+	   HCL 
+			init-plan-apply-destroy
+
+Providers 
+https://registry.terraform.io/
+https://registry.terraform.io/browse/providers
+
+Workflow of Terraform?
+https://www.devopsschool.com/blog/terraform-basics-workflow-loop-explained/
+
+https://www.devopsschool.com/blog/terraform-advance-workflow-loop-explained/s
+==========================================================
+aws
+	resource(S) - 5000
+		ec2
+			- param 1 - required
+			- param 2 - optional
+			- param 3
+
+github
+	resource(S) - 100+
+
+
+
+resource "aws_instance" "first-ec2" {
+  ami           = "ami-03d5c68bab01f3496" # us-west-2
+  instance_type = "t2.micro"
+}
+==============================================
+
+https://www.devopsschool.com/blog/example-of-terraform-code-for-lab-and-demo/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
