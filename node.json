@@ -1,0 +1,7 @@
+{ "capabilities": [{  "browserName": "firefox",  "platform": "WINDOWS",  "maxInstances": 1
+}],
+"maxSession": 5,
+"port": 5556,
+"register": true
+}
+
